@@ -1,0 +1,1011 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    <div class="banner_outer">
+        <div class="banner_bg">
+            <div class="container transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-once="true">
+
+                        <div class="banner-heading">
+                            <h1>We Create <span class="clrGreen">Valuable, Reliable, and Consistent</span> Websites.</h1>
+                            <h4>At Confianza IT Solutions, we are dedicated to delivering extensive mobile and web development services tailored for both individual and corporate clients. Additionally, we offer access to dedicated remote resources, enabling your business to thrive anywhere in the world.</h4>
+                            <div class="banner-bttn-mobile text-sm-center text-md-left">
+                                <div class="d-none d-xl-block d-lg-block d-md-block d-sm-block">
+                                    <span class="banner_bttn mr-4"> @Html.ActionLink("Get a Quote", "Index", "Get_a_quote")</span>
+                                    <span class="banner_bttn"> @Html.ActionLink("Portfolio", "Index", "Portfolio")</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-once="true">
+                        <div class="bg_laptop">
+                            <img src="~/images/banner/banner1.svg" alt="laptop" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner buttons for mobile section begin -->
+    <div class="banner-btn-mobile d-block d-xl-none d-lg-none d-md-none d-sm-none">
+        <span class="banner_bttn mr-2">@Html.ActionLink("Get a Quote", "Index", "Get_a_quote")</span>
+        <span class="banner_bttn">@Html.ActionLink("Portfolio", "Index", "Portfolio")</span>
+    </div>
+    <!-- banner buttons for mobile section end -->
+
+    <div class="clearfix"></div>
+
+    <!-- side nav section end -->
+    <!-- About us section begin -->
+    <section class="py50 section_aboutUs" data-aos="fade-up" data-aos-once="true">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-12">
+                    <div class="section_heading text-center">
+                        <h5>welcome to</h5>
+                        <h1>confianza it solutions</h1>
+                    </div>
+                    <div class="mt-3 section_text">
+                        <p class="text-md-center">
+                            At Confianza IT Solutions, our mission is simple yet powerful: to deliver top-tier technology services with a client-centric approach. We are driven by a commitment to turning the complex tasks into the comprehensible, offering tailored solutions that set us apart in the industry With over 7+ years of experience in software solutions and IT support services, we have honed our expertise to perfectio.
+                        </p>
+                        <p class="text-md-center">
+                            Our strength lies in our network of expert developers who stand ready to meet your needs around the clock, 24/7. The dedicated team has been instrumental in successfully delivering various IT projects, spanning web applications, mobile apps, and custom application development What sets us apart is our global reach. We not only serve clients locally but also offer dedicated remote resources to assist businesses and entrepreneurs worldwide.
+                        </p>
+                        <p class="text-md-center">
+                            <strong>Your success is our priority, and we are here to make it happen.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                @*<div class="col-md-12">
+                        <img class="aboutImg" src="~/images/aboutUs/bgoutline.svg" />
+                    </div>*@
+
+            </div>
+        </div>
+    </section>
+    <!-- About us section end -->
+    <!-- our services section begin -->
+    <section id="ServicesSection" class="service-sec py50 position-relative section" data-aos="fade-up" data-aos-once="true">
+        <section class="section section-sm section-app bg-primary-app">
+            <svg class="wave-dark" width="1920" height="713" viewBox="0 0 1920 713" fill="none">
+                <path class="wave-path wave-path-2" d="M1920 463.988V713H0V234.66C102.275 199.182 221.353 170.486 354.422 158.026C584.381 136.494 775.567 204.707 992.611 282.146C1225.15 365.113 1373 457.092 1858.75 463.796C1879.49 464.082 1899.9 464.142 1920 463.988Z" fill="white"></path>
+                <path class="wave-path wave-path-3" d="M1920 85.9538V713H0V310.063C15.2357 310.099 30.6508 310.012 46.2454 309.796C417.632 304.67 679.852 211.113 912.389 128.146C1129.43 50.7068 1320.62 -17.5061 1550.58 4.02629C1690.21 17.1004 1814.43 48.0502 1920 85.9538Z" fill="white"></path>
+                <path class="wave-path wave-path-1" d="M1920 463.314V713H0V414.325C0.0515862 414.316 0.103105 414.308 0.154556 414.299C59.8232 467.769 270.664 573.445 636.676 568.392C873.316 565.126 1040.4 505.514 1188.57 452.65C1326.86 403.309 1448.68 359.846 1595.21 373.565C1727.41 385.944 1837.94 423.471 1920 463.314Z" fill="white"></path>
+            </svg>
+        </section>
+        <div class="container" id="service">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-12">
+                    <div class="services_wrapper">
+                        <div class="section_heading">
+                            <h5>what we do</h5>
+                            <h1 class="text-white">OUR SERVICES</h1>
+                        </div>
+                        <div class="mt-3 mb-5 section_text">
+                            <p>
+                                At Confianza It Solutions, we specialize in a range of services designed to empower your business and drive digital success With a client-centric approach and a commitment to excellence, we aim to transform your digital aspirations into reality.
+                            </p>
+                            <p>
+                                Our services are tailored to streamline your processes, enhance your online presence, and drive your business forward Let us be your partner in harnessing the power of technology to achieve your business goals. Contact us today to explore how we can work together to create a brighter digital future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-8 col-lg-7 col-12">
+                    <div class="row align-items-center h-100">
+
+                        @*WEB DEVELOPMENT SECTION*@
+                        <div class="col-md-6 col-12">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="service_img">
+                                            <img src="~/images/services/development.svg" alt="Development" draggable="false">
+                                        </div>
+
+                                        <div class="service_content text-left">
+                                            <strong>Web App Development</strong>
+                                            <p class="card-text">We are dedicated to providing a delivering cutting-edge web app development services that elevate your online presence and streamline your business operations. Our expert team of developers possesses a wealth of experience and a deep understanding of web technologies.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <ul>
+                                            <li>
+                                                <h5>Key Highlights of Our Web App Development Services:</h5>
+                                            </li>
+                                            <li>
+                                                <p>Customization</p>
+                                            </li>
+                                            <li>
+                                                <p>Scalability</p>
+                                            </li>
+                                            <li>
+                                                <p>Security</p>
+                                            </li>
+                                            <li>
+                                                <p>Performance Optimization</p>
+                                            </li>
+                                            <li>
+                                                <p>Maintenance and Support</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        @*E-COMMERCE SECTION BEGINS*@
+                        <div class="col-md-6 col-12">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="service_img">
+                                            <img src="~/images/services/e-comm.svg" alt="E-commerce" draggable="false">
+                                        </div>
+
+                                        <div class="service_content text-left">
+                                            <strong>Ecommerce Solutions</strong>
+                                            <p class="card-text">Our e-commerce websites focus on user-friendliness, ensuring intuitive navigation, secure transactions, and compelling visuals that drive conversions.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <ul>
+                                            <li>
+                                                <h5>Key Highlights of Our Ecommerce Solutions Services:</h5>
+                                            </li>
+                                            <li>
+                                                <p>Mobile Optimization</p>
+                                            </li>
+                                            <li>
+                                                <p>Content Management</p>
+                                            </li>
+                                            <li>
+                                                <p>User-Centric Design </p>
+                                            </li>
+                                            <li>
+                                                <p>Payment Gateway Integration</p>
+                                            </li>
+                                            <li>
+                                                <p>Inventory Management</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*E-COMMERCE SECTION BEGINS*@
+                        <div class="col-md-6 col-12">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="service_img">
+                                            <img src="~/images/services/mobile.svg" alt="Mobile-Development" draggable="false">
+                                        </div>
+
+                                        <div class="service_content text-left">
+                                            <strong>Mobile App Development</strong>
+                                            <p class="card-text">Our Mobile App Development Services are dedicated to crafting customized mobile applications that cater to your unique business needs, ensuring a seamless user experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <ul>
+                                            <li>
+                                                <h5>Key Highlights of Our Mobile App Development Services:</h5>
+                                            </li>
+                                            <li>
+                                                <p>Cross-Platform Expertise</p>
+                                            </li>
+                                            <li>
+                                                <p>User-Centric Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Scalability</p>
+                                            </li>
+                                            <li>
+                                                <p>Quality Assurance</p>
+                                            </li>
+                                            <li>
+                                                <p>Transparent Communication</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*WEB DESIGN SECTION BEGINS*@
+                        <div class="col-md-6 col-12">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="service_img">
+                                            <img src="~/images/services/design.svg" alt="Design" draggable="false">
+                                        </div>
+
+                                        <div class="service_content text-left">
+                                            <strong>Web Designing</strong>
+                                            <p class="card-text">
+                                                We design a good website that can accommodates a lot of content which is a tricky balancing act to pull off.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <ul>
+                                            <li>
+                                                <h5>Key Highlights of Our Web Designing Services:</h5>
+                                            </li>
+                                            <li>
+                                                <p>Cross-Platform Expertise</p>
+                                            </li>
+                                            <li>
+                                                <p>User-Centric Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Scalability</p>
+                                            </li>
+                                            <li>
+                                                <p>Quality Assurance</p>
+                                            </li>
+                                            <li>
+                                                <p>Transparent Communication</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dots">
+                            <img src="~/images/services/dots.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- our services section end -->
+    <div class="clearfix"></div>
+
+    <!-- our portfolio section begin -->
+    <section class="py6 portfolio_container mx-auto">
+        <div class="slider1 img-fluid position-relative">
+            <div id="particles-js"></div>
+            <div class="container" data-aos="zoom-in" data-aos-once="true">
+                <div class="row text-md-center">
+                    <div class="col-md-12">
+                        <div class="section_heading text-center">
+                            <h5>our</h5>
+                            <h1>PORTFOLIO</h1>
+                        </div>
+                        <div class="text-center my-3 section_text section_text">
+                            <p>Here you'll discover a selection of some of our most recent projects that showcase the type of clients we work closely with.</p>
+                        </div>
+                    </div>
+
+                    <div id="carousel" class="col-md-12 text-center">
+                        <div id="view-carousel" class="active" style="display: block;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="carousel">
+                                       @*  <a class="carousel-item" href="#one!">
+                                            <img src="~/images/portfolio/all/port-img-1.png" alt="Portfolio">
+                                        </a>
+                                        <a class="carousel-item" href="#two!">
+                                            <img src="~/images/portfolio/all/port-img-2.png" alt="Portfolio">
+                                        </a>
+                                        <a class="carousel-item" href="#three!">
+                                            <img src="~/images/portfolio/all/port-img-3.png" alt="Portfolio">
+                                        </a>
+                                        <a class="carousel-item" href="#four!">
+                                            <img src="~/images/portfolio/all/port-img-4.png" alt="Portfolio">
+                                        </a>
+                                        <a class="carousel-item" href="#five!">
+                                            <img src="~/images/portfolio/all/port-img-5.png" alt="Portfolio">
+                                        </a> *@
+                                      @*   <div class="laptop_img">
+                                            <img src="~/images/portfolio/laptop.png" />
+                                        </div> *@
+
+                                        <div class="laptop_img">
+
+                                            <div class="screen">
+
+                                                <a class="carousel-item" href="#one!">
+                                                    <img src="~/images/portfolio/all/port-img-1.png" alt="Portfolio">
+                                                </a>
+                                                <a class="carousel-item" href="#two!">
+                                                    <img src="~/images/portfolio/all/port-img-2.png" alt="Portfolio">
+                                                </a>
+                                                <a class="carousel-item" href="#three!">
+                                                    <img src="~/images/portfolio/all/port-img-3.png" alt="Portfolio">
+                                                </a>
+                                                <a class="carousel-item" href="#four!">
+                                                    <img src="~/images/portfolio/all/port-img-4.png" alt="Portfolio">
+                                                </a>
+                                                <a class="carousel-item" href="#five!">
+                                                    <img src="~/images/portfolio/all/port-img-5.png" alt="Portfolio">
+                                                </a>
+
+                                            </div>
+
+                                            <img src="/images/portfolio/laptop.png" class="laptop-frame">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12 mt-md-5 text-center">
+                        <span class="banner_bttn">@Html.ActionLink("Explore All", "Index", "Portfolio")</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our portfolio section end -->
+    <div class="clearfix"></div>
+
+    <!-- our work process section begin -->
+    <section id="ProcessSection" class="work_process_col py6" data-aos="fade-up" data-aos-once="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_heading text-center">
+                        <h5>how we work</h5>
+                        <h1>OUR work process</h1>
+                    </div>
+                    <div class="text-center mt-3 mb-5 section_text">
+                        <p>We are prefer a mulitdisciplinary approach to ensure quality and customer satisfaction. To help you better understand our company and the services, we provide an idea about our work process below.</p>
+                    </div>
+                </div>
+            </div>
+            <!--process steps section begin-->
+            <div class="info-sec col-md-12 mb-5">
+                <section id="process-section" class="d-none d-lg-block d-xl-block">
+                    <div class="refresh-section">
+                        <div id="SVGProcess" style="display:none;">
+                            <div class="main-container">
+
+                                <!-- circle section begin -->
+                                <div class="main-circle">
+                                    <div class="inner-circle">
+                                        <h3>
+                                            How we Turn Your<br />
+                                            App Idea Into Reality
+                                        </h3>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- circle section end -->
+                                <!-- first row section begin -->
+                                <div id="steps-row" class="first-row steps-pos-rel">
+                                    <div class="ui-process-steps box-1 animated fadeInLeft">
+                                        <div class="row">
+                                            <div class="ui-process-text col-md-8 px-0 text-right align_leftSteps">
+                                                <h4><span class="count-1">01.</span>Have an idea?</h4>
+                                                <p>Start by putting your idea's down as clearly as possible.</p>
+                                            </div>
+                                            <div class="ui-process-icons col-md-4 pl-0">
+                                                <img src="~/images/work_process/idea-blub.svg" alt="Idea">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui-process-steps box-8 animated fadeInRight">
+                                        <div class="row">
+                                            <div class="ui-process-icons col-md-4 pr-0">
+                                                <img src="~/images/work_process/launch.svg" alt="launch">
+                                            </div>
+                                            <div class="ui-process-text col-md-8 px-0 align_rightSteps">
+                                                <h4><span class="count-8">08.</span>Launch</h4>
+                                                <p>With a combination of serval checklists and security measures, we provide you a final launch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <!-- first row section end -->
+                                <!-- second row section begin -->
+                                <div id="steps-row" class="second-row steps-pos-rel">
+                                    <div class="ui-process-steps box-2 animated fadeInLeft">
+                                        <div class="row">
+                                            <div class="ui-process-text col-md-8 px-0 text-right align_leftSteps">
+                                                <h4><span class="count-2">02.</span>Let’s Discuss</h4>
+                                                <p>Every time you discuss about an idea your website is getting better.</p>
+                                            </div>
+                                            <div class="ui-process-icons col-md-4 pl-0">
+                                                <img src="~/images/work_process/discuss.svg" alt="discuss">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui-process-steps box-7 animated fadeInRight">
+                                        <div class="row">
+                                            <div class="ui-process-icons col-md-4 pr-0">
+                                                <img src="~/images/work_process/beta.svg" alt="beta version">
+                                            </div>
+                                            <div class="ui-process-text col-md-8 px-0 align_rightSteps">
+                                                <h4><span class="count-7">07.</span>Beta Release</h4>
+                                                <p>Our foucs on beta testing is to reduce impact on users which often incorporates usability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- second row section end -->
+                                <!-- third row section begin -->
+                                <div id="steps-row" class="third-row steps-pos-rel">
+                                    <div class="ui-process-steps box-3 animated fadeInLeft">
+                                        <div class="row">
+                                            <div class="ui-process-text col-md-8 px-0 text-right align_leftSteps">
+                                                <h4><span class="count-3">03.</span>Create Prototype</h4>
+                                                <p>Our goal for prototyping is to create a model for our content and it's internal structrue.</p>
+                                            </div>
+                                            <div class="ui-process-icons col-md-4 pl-0">
+                                                <img src="~/images/work_process/Prototype.svg" alt="prototype">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui-process-steps box-6 animated fadeInRight">
+                                        <div class="row">
+                                            <div class="ui-process-icons col-md-4 pr-0">
+                                                <img src="~/images/work_process/testing.svg" alt="testing">
+                                            </div>
+                                            <div class="ui-process-text col-md-8 px-0 align_rightSteps">
+                                                <h4><span class="count-6">06.</span>Testing</h4>
+                                                <p>Testing is performed with an intent to find whether the website has met the pre-defined goals.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- third row section end -->
+                                <!-- fourth row section begin -->
+                                <div id="steps-row" class="fourth-row steps-pos-rel">
+                                    <div class="ui-process-steps box-4 animated fadeInLeft">
+                                        <div class="row">
+                                            <div class="ui-process-text col-md-8 px-0 text-right">
+                                                <h4><span class="count-4">04.</span>Design</h4>
+                                                <p>We design a website which appears professional and performs well.</p>
+                                            </div>
+                                            <div class="ui-process-icons col-md-4 pl-0">
+                                                <img src="~/images/work_process/design.svg" alt="design">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ui-process-steps box-5 animated fadeInRight">
+                                        <div class="row">
+                                            <div class="ui-process-icons col-md-4 pr-0">
+                                                <img src="~/images/work_process/development.svg" alt="development">
+                                            </div>
+                                            <div class="ui-process-text col-md-8 px-0">
+                                                <h4><span class="count-5">05.</span>Development</h4>
+                                                <p>We develop websites with great user experience & functionality.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth row section end -->
+
+                            </div><!-- main-container div end -->
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                            <svg id="animated2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 1012.4">
+                                <defs>
+                                    <style>
+                                        .grey {
+                                            fill: none;
+                                            stroke: #c1c1c1;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+
+                                <path id="gr" class="grey" d="M575.7,508.3c-11.3-20-18.4-42.5-20.6-65.4c-2.3-23.7,0.5-47.9,8.3-70.4c7.3-21.3,19.1-41,34.2-57.6
+				c14.8-16.4,32.9-29.9,52.9-39.6c21.3-10.3,44.8-16.1,68.4-17.1c24-1,48.2,2.9,70.6,11.6c20.9,8.1,40.2,20.3,56.5,35.8
+				c16.1,15.3,29.2,33.7,38.2,54c9.6,21.7,14.5,45.6,14.2,69.3c-0.3,23.1-5.5,46.1-15.2,67.2c-1.9,4.2-4.2,8.2-6.2,12.4" />
+
+
+
+                                <defs>
+                                    <style>
+                                        .r {
+                                            fill: none;
+                                            stroke: #2056A3;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="r" class="r" d="m857.9,318c20.4,23.6,34.2,52.9,38.8,85">
+                                </path>
+
+
+
+                                <defs>
+                                    <style>
+                                        .g {
+                                            fill: none;
+                                            stroke: #2A66B7;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="g" class="g" d="m678,264.8c15.3-4.4,31.5-6.7,48.3-6.7c16.2,0,32,2.2,46.8,6.3" />
+
+                                <defs>
+                                    <style>
+                                        .y {
+                                            fill: none;
+                                            stroke: #3476CB;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="y" class="y" d="M556,402.6c4.6-32.3,18.7-61.6,39.3-85.3" />
+                                <defs>
+                                    <style>
+                                        .p {
+                                            fill: none;
+                                            stroke: #397ED5;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="p" class="p" d="m575.6,507.6c-13.6-24.1-21.3-51.8-21.3-81.2c0-7,0.4-13.9,1.3-20.7v0" />
+
+                                <defs>
+                                    <style>
+                                        .bl {
+                                            fill: none;
+                                            stroke: #2F6EC1;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="bl" class="bl" d="m597.3,315.1c20.6-22.8,47.4-40.2,77.9-49.4" />
+                                <defs>
+                                    <style>
+                                        .ro {
+                                            fill: none;
+                                            stroke: #255EAD;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="ro" class="ro" d="m776,265.2c31.4,9.2,58.9,27,79.9,50.5" />
+                                <defs>
+                                    <style>
+                                        .sa {
+                                            fill: none;
+                                            stroke: #1B4E99;
+                                            stroke-miterlimit: 10;
+                                            stroke-width: 7px;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="sa" class="sa" d="m897.1,406c0.8,6.7,1.2,13.5,1.2,20.3c0,29.6-7.8,57.5-21.6,81.6" />
+                                <circle fill="#3476CB" cx="556" cy="404.2" r="10" />
+                                <circle fill="#397ED5" cx="579" cy="513.2" r="10" />
+                                <circle fill="#1B4E99" cx="874" cy="513.2" r="10" />
+                                <circle fill="#14488E" cx="897" cy="404.2" r="10" />
+                                <circle fill="#2056A3" cx="857" cy="317.2" r="10" />
+                                <circle fill="#2F6EC1" cx="596" cy="317.2" r="10" />
+                                <circle fill="#255EAD" cx="774" cy="264.2" r="10" />
+                                <circle fill="#2A66B7" cx="679" cy="264.2" r="10" />
+                            </svg>
+
+
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </section>
+
+                <!-- for mobile and tab devices begin -->
+                <section class="d-block d-lg-none d-xl-none mt-5 mt-lg-0 mt-xl-0">
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/idea-blub.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Have an Idea !</label>
+                            <p class="m-0">Start project by putting your idea's down as clearly as possible.</p>
+                            <h1 class="count">01</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/discuss.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Let’s Discuss</label>
+                            <p class="m-0">Every time you discuss about an idea your website is getting better.</p>
+                            <h1 class="count">02</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/prototype.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Create Prototype</label>
+                            <p class="m-0">Our goal for prototyping is to create a model for our content and it's internal structrue.</p>
+                            <h1 class="count">03</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/design.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Design</label>
+                            <p class="m-0">We design a website which appears professional and performs well.</p>
+                            <h1 class="count">04</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/development.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Development</label>
+                            <p class="m-0">We develop websites with great user experience and advanced functionality.</p>
+                            <h1 class="count">05</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/testing.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Testing</label>
+                            <p class="m-0">Testing is performed with an intent to find whether the website has met the pre-defined goals.</p>
+                            <h1 class="count">06</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/beta.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Beta Release</label>
+                            <p class="m-0">Our foucs on beta testing is to reduce impact on users which often incorporates usability.</p>
+                            <h1 class="count">07</h1>
+                        </div>
+                    </section>
+
+                    <section class="processSteps_Mobile position-relative">
+                        <div class="mobile_stepImg">
+                            <img src="~/images/work_process/launch.svg" />
+                        </div>
+                        <div class="mobile_StepTxt">
+                            <label>Launch</label>
+                            <p class="m-0">With a combination of serval checklists and security measures, we provide you a final launch.</p>
+                            <h1 class="count">08</h1>
+                        </div>
+                    </section>
+
+
+                </section>
+                <!-- for mobile and tab devices end -->
+                <div class="clearfix"></div>
+            </div>
+            <!--process steps section end-->
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+
+    <!-- our work process section end -->
+    <div class="clearfix"></div>
+
+
+    <!-- our work testimonials section begin -->
+    <div>
+        @Html.Partial("_Testimonials")
+    </div>
+
+    <!-- our work testimonials section end -->
+
+    <div class="clearfix"></div>
+
+    <!-- Social media section begin -->
+    <div>
+        @Html.Partial("_LetsTalk")
+        @Html.Partial("_SocialAccount")
+    </div>
+    <!-- Social media section end -->
+    <!-- fooer section begin -->
+    <div>
+        @Html.Partial("Partial")
+    </div>
+    <!-- footer section end -->
+    <div class="clearfix"></div>
+    @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NewsLetterModal">
+            Launch demo modal
+        </button>*@
+    <!-- Modal -->
+    <div class="modal fade" id="NewsLetterModal" tabindex="-1" role="dialog" aria-labelledby="NewsLetterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                @*<div class="modal-header">
+                        <h5 class="modal-title" id="NewsLetterModalLabel">Modal title</h5>
+                        <button type="button" class="close CloseModal" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>*@
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-5 col-12 d-md-flex d-none">
+                            <img src="~/images/newsletter/newsletter.svg" draggable="false" alt="newsletter" />
+                        </div>
+                        <div class="col-md-7 col-12">
+                            <div class="newsletter_header position-relative">
+                                <h1>subscribe us!</h1>
+                                <p>Subscribe us now to get weekly updates on trending technical topics.</p>
+                                <form action="Subscribe" method="post" class="subscribe_input">
+                                    <input type="email" id="email_sd" onchange="validateEmail()" name="Subscribe" required="required" class="form-control contact-form-field shadow" placeholder="Your Email" value="" />
+                                    <p class="validationText mb-0" id="emaiShowName"></p>
+                                    <button type="submit" class="mt-3">subscribe</button>
+                                </form>
+                                <button type="button" class="close CloseModal" data-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email_sd").value;
+            var emailRegexPattern = /^([A-Za-z]|[0-9])+$/;
+            var messageShowEmail = document.getElementById("emaiShowName");
+
+            if (emailRegexPattern.test(email)) {
+                messageShowEmail.textContent = "Please enter a valid email address";
+                messageShowEmail.style.display = "block";
+                return false;
+            }
+            else {
+                messageShowEmail.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- SUBSCRIBE POPUP APPEARS ON LOAD OF HOME PAGE BEGINS -->
+    <script>
+        window.addEventListener("load", function () {
+            this.setTimeout(
+                function open(event) {
+                    document.querySelector("#NewsLetterModal").classList.add("show");
+                },
+                3500
+
+            )
+        });
+
+        document.querySelector(".CloseModal").addEventListener("click", function () {
+            document.querySelector("#NewsLetterModal").classList.remove("show");
+        });
+
+        document.querySelector('body').addEventListener('click', function () {
+            document.querySelector('#NewsLetterModal').classList.remove('show');
+        });
+        document.querySelector('#NewsLetterModal').addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+
+    </script>
+
+    <!-- animation on scroll js begin -->
+    <script src="~/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            disable: 'mobile'
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+
+        });
+    </script>
+    <script>
+        var isInViewport = function (elem) {
+            var bounding = elem.getBoundingClientRect();
+            return (
+                bounding.top <= 250
+            );
+        };
+        var loaded = false;
+        $(window).on('scroll', function () {
+            var h1 = document.querySelector('#ProcessSection');
+            if (isInViewport(h1) && !loaded) {
+                this.loaded = true;
+                var html = $('.refresh-section').html();
+                $('#process-section').html(html);
+                $('#SVGProcess').css('display', 'block');
+
+                var s = Snap('#animated2');
+
+                var first = s.select('#p');
+                var second = s.select('#y');
+                var third = s.select('#bl');
+                var forth = s.select('#g');
+                var fifth = s.select('#ro');
+                var sixth = s.select('#r');
+                var seventh = s.select('#sa');
+
+
+                Snap.animate(0, 107, function (value) {
+                    first.attr({ 'stroke-dasharray': value + '0,107' });
+                    $('#y').hide();
+                    $('#bl').hide();
+                    $('#r').hide();
+                    $('#g').hide();
+                    $('#ro').hide();
+                    $('#sa').hide();
+
+                    if (value == 107) {
+
+                        Snap.animate(0, 108, function (value) {
+                            second.attr({ 'stroke-dasharray': value + ',108' });
+                            $('#y').show();
+                            if (value == 108) {
+
+                                Snap.animate(0, 109, function (value) {
+                                    third.attr({ 'stroke-dasharray': value + ',109' });
+                                    $('#bl').show();
+
+                                    if (value == 109) {
+
+                                        Snap.animate(0, 110, function (value) {
+                                            forth.attr({ 'stroke-dasharray': value + ',110' });
+                                            $('#g').show();
+
+
+                                            if (value == 110) {
+
+                                                Snap.animate(0, 111, function (value) {
+                                                    fifth.attr({ 'stroke-dasharray': value + ',111' });
+                                                    $('#ro').show();
+                                                    if (value == 111) {
+
+                                                        Snap.animate(0, 112, function (value) {
+                                                            sixth.attr({ 'stroke-dasharray': value + ',112' });
+                                                            $('#r').show();
+                                                            if (value == 112) {
+
+                                                                Snap.animate(0, 113, function (value) {
+                                                                    seventh.attr({ 'stroke-dasharray': value + ',113' });
+                                                                    $('#sa').show();
+
+
+                                                                }, 1400);
+                                                            }
+
+
+                                                        }, 1400);
+                                                    }
+
+
+                                                }, 1400);
+                                            }
+
+                                        }, 1400);
+                                    }
+
+                                }, 1400);
+                            }
+
+                        }, 1400);
+                    }
+
+                }, 1400);
+            }
+        })
+
+
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Responsive breakpoints
+            breakpoints: {
+
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                1500: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                }
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#ServicesSection .card').click(function () {
+                // Remove 'active' class from all elements
+                $('#ServicesSection .card').removeClass('flip');
+
+                // Add 'active' class to the clicked element
+                $(this).addClass('flip');
+            });
+        });
+    </script>
+
+    @*<script>
+            $(document).ready(function () {
+                $('.#ServicesSection .card').click(function () {
+                    // Remove 'active' class from all elements
+                    $('.#ServicesSection .card').removeClass('flip');
+
+                    // Add 'active' class to the clicked element
+                    $(this).addClass('flip');
+                });
+
+                $(document).click(function (event) {
+                    // Remove 'active' class if clicking outside of elements with the class 'myClass'
+                    if (!$(event.target).closest('.#ServicesSection .card').length) {
+                        $('.#ServicesSection .card').removeClass('flip');
+                    }
+                });
+            });
+        </script>*@
+
+</body>
+
+

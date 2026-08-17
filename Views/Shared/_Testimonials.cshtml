@@ -1,0 +1,136 @@
+﻿ <!-- our work testimonials section begin -->
+<section id="TestimonialsSection" class="position-relative py6 bg_testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-once="true">
+                <div class="section_heading text-center">
+                    <h5>what our clients say</h5>
+                    <h1>OUR testimonials</h1>
+                </div>
+                <div class="text-center mt-3 mb-5 section_text">
+                    <p>Our clients are our biggest supporters. Would you like to know what our clients think about us? Take a look for yourself in the testimonials below.</p>
+                </div>
+            </div>
+
+            <section class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-aos="fade-right" data-aos-once="true" data-aos-duration="3000">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">
+                                        "These guys are great, Worked hard to complete my work ( due to my last company left me in hell). dedication showed towards work was appreciable.
+                                        thanks guys"
+                                    </p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c1.jpg">*@
+                                        <h6>Thomas</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">"Harish is very special to me. He, not only worked under a very short deadline, but he was willing to change things on a day to day basis. I will definitely come back to him for more work. I absolutely recommend Harish to successfully complete any project he says he can do because he means what he says. 100% success rate with building our complex platform"</p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c2.jpg">*@
+                                        <h6>Nathan</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">
+                                        "I've worked with Bhanu for quit some time. It has been a pleasant experience. He is always available to respond to communications. Quality of work has been great.Highly recommended"
+                                    </p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c3.jpg">*@
+                                        <h6>Dennis</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">"Really nice chap, did the work required quicker than agreed which is always a good thing, very high quality of work too with no fuss. HIGHLY RECCOMENDED to everyone!"</p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c4.jpg">*@
+                                        <h6>Jordan</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">"Very good company to work with. They met the deadlines and willing to work with tight schedule"</p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c5.png">*@
+                                        <h6>Scott</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonials_content">
+                                <div class="ClientReview">
+                                    <p class="m-0">
+                                        "Good guys to work with, understood my requirements and delivered a good solution in time with low cost.
+                                        thanks very much."
+                                    </p>
+                                </div>
+                                <div class=" ClientImg_name">
+                                    @*<img src="~/images/testimonials/c6.png">*@
+                                        <h6>Tom</h6>
+                                        @*<small>Abc Company</small>*@
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<!-- our work testimonials section end -->
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            1000: {
+                slidesPerView: 3,
+                spaceBetween: 40
+            }
+        }
+    });
+</script>

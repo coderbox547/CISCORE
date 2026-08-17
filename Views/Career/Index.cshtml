@@ -1,0 +1,302 @@
+﻿@model  CisCore.Models.Mail
+@{
+    ViewBag.Title = "Career";
+}
+
+
+@*BANNER SECTION BEGIN*@
+<section class="career_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12" data-aos="fade-right" data-aos-once="true">
+                <div class="career_banner text-left">
+                    <h3>Work With Us</h3>
+                    <h1>Join <span class="clrGreen">Confianza IT Solutions</span> Team!</h1>
+                    <p>Embark on a journey with us! Explore exciting opportunities and chart your career path. Join us in shaping the future, where passion meets purpose.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12" data-aos="fade-left" data-aos-once="true">
+                <div class="bg_laptop">
+                    <img class="w-100" src="~/images/career/career.svg" alt="banner" draggable="false" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*BANNER SECTION END*@
+
+
+@*CURRENT OPENINGS  SECTION BEGIN*@
+<form asp-controller="Career" asp-action="Index" method="post">
+    @Html.AntiForgeryToken()
+    <div class="container mt100" data-aos="fade-up" data-aos-once="true">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section_heading text-center">
+                    <h5>Join Our Team</h5>
+                    <h1>Current Openings</h1>
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-3 mb-5 text-center">
+                <p>If you are smart and you love challenges, we want to hear from you, no matter what your background is! You can apply for the below mentioned posts by sharing your resume with us.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="CurrentOpening_card border p-4 mb-4 cardActive" id="btnClick1">
+                    <h5 class="card-title">Senior ASP.Net Developer</h5>
+                    <p class="card-text text-truncate m-0">C#, Entity Framework, WEB API , Angular.</p>
+                </div>
+
+                <div class="CurrentOpening_card border p-4" id="btnClick2">
+                    <h5 class="card-title">Wordpress Developer</h5>
+                    <p class="card-text text-truncate m-0">Must have knowledge of custom fields, customization in wordpress and core knowledge of the PHP.</p>
+                </div>
+            </div>
+
+            <div id="senior_NET" class="col-md-8 col-12">
+                <div class="job_details border p-4 h-100">
+                    <div class="mb-4 border-bottom pb-2">
+                        <h5 class="card-title mb-4">Job Description for senior ASP .Net developer</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Develop, test, and maintain applications to specified designs & standards using .NET/.NET Core.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Develop & implement modern web services using service-oriented architecture and RESTful APIs.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Implement front-end interfaces & experiences with modern HTML/CSS/jQuery.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="card-title mb-4">Skills & Experience</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    1.5 to 3 Years of experience.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Sound knowledge of .NET framework & .NET Core.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Knowledge of database operations with SQL Server.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Must have Knowledge of ASP.NET with C#/ Razor syntax, MVC, Entity Framework.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="apply_btn mt-4" data-toggle="modal" data-target="#ApplyForJob">Apply</button>
+                </div>
+            </div>
+            <div id="junior_NET" class="col-md-8 col-12">
+                <div class="job_details border p-4 h-100">
+                    <div class="mb-4 border-bottom pb-2">
+                        <h5 class="card-title mb-4">Job Description for wordpress developer</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Develop, test, and maintain applications to specified designs & standards using .NET/.NET Core.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Develop & implement modern web services using service-oriented architecture and RESTful APIs.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Implement front-end interfaces & experiences with modern HTML/CSS/jQuery.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="card-title mb-4">skills & Experience</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    1.5 to 3 Years of experience.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Sound knowledge of .NET framework & .NET Core.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Knowledge of database operations with SQL Server.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Must have Knowledge of ASP.NET with C#/ Razor syntax, MVC, Entity Framework.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="apply_btn mt-4" data-toggle="modal" data-target="#ApplyForJob">Apply</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</form>
+@*CURRENT OPENINGS  SECTION END*@
+
+<section class="bg_drop_CV" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="text-center mb-5 mb-md-0">
+                    <img class="w-75" src="~/images/career/drop_cv.svg" alt="banner" draggable="false" />
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="career_banner text-left">
+                    <h3>Want to Work With Us</h3>
+                    <h1>Drop <span class="clrGreen">your CV</span> now!</h1>
+                    <p>Ready to take the next step in your career journey? Share your resume with us, and let's unlock new possibilities together.</p>
+                    <button type="button" class="apply_btn mt-4" data-toggle="modal" data-target="#ApplyForJob">Drop Your CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@*WHY CONFIANAZA SOLUTIONS*@
+@*<div class="container mt100">
+    <div class="row" data-aos="fade-up" data-aos-once="true">
+        <div class="col-12 mb-5">
+            <div class="section_heading text-center">
+                <h5>Reasons to join</h5>
+                <h1>confianza IT solutions</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="4000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="3000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="4000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="3000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+        <div class="col-lg-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+            <div class="reasons_card shadow text-center">
+                <img src="~/images/career/balance.svg" alt="reason" draggable="false" />
+                <h6 class="text-capitalize">lorem ipsum</h6>
+                <p class="mb-0">lorem ipsum is simply a dummy text.lorem ipsum is simply a dummy text. </p>
+            </div>
+        </div>
+
+    </div>
+</div>*@
+
+<!-- Social media section begin -->
+<div>
+    @Html.Partial("_SocialAccount")
+</div>
+
+<!-- Social media section end -->
+<!-- footer section start -->
+<div>
+    @Html.Partial("Partial")
+</div>
+
+<!-- footer section end -->
+
+<div>
+    @Html.Partial("JobApply_Popup")
+</div>
+
+<script>
+    $("#junior_NET").hide();
+    $(".cardActive").addClass("cardActive")
+
+    $('#btnClick1').click(function () {
+        $('#senior_NET').show();
+        $('#junior_NET').hide();
+        $(".cardActive").removeClass("cardActive");
+        $(this).addClass("cardActive")
+    });
+    $('#btnClick2').click(function () {
+        $('#junior_NET').show();
+        $('#senior_NET').hide();
+        $(".cardActive").removeClass("cardActive");
+        $(this).addClass("cardActive")
+    });
+</script>

@@ -1,0 +1,199 @@
+﻿<!-- fooer section begin -->
+@model  CisCore.Models.Mail
+<section>
+    <div class="bg-footer" data-aos="fade-up" data-aos-once="true">
+        <div class="container">
+            <div class="row">
+                @*ABOUT US AND OTHER DETAILS SECTION*@
+                <div class="col-xl-8 col-lg-7 col-12 mb-lg-0 mb-5">
+                    @*ABOUT US SECTION*@
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="footer_title mb-3">
+                                <h5>About Us</h5>
+                            </div>
+
+                            <div class="footer_info">
+                                <p>We are committed to delivering premier technology services to client centric approach. By keeping the end result in mind, we believe in making complex things simple by providing customized solutions.  Which allow us to develop in a way that others cannot. We have over 2+ years of expertise in software solutions and IT support services. Futhermore, we have strong network of 15+ expert developer, they are eager to assist in all your needs 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row border-bottom mb-3">
+                        @*QUICK LINKS SECTION*@
+                        <div class="col-sm-6 col-12 mb-3">
+                            <div class="footer_title mb-3">
+                                <h5>Quick Links</h5>
+                            </div>
+
+                            <div class="footer_info">
+                                <ul>
+                                    <li>
+                                        <a href="@Url.Action("Index","Portfolio")">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index","Get_a_quote")">Get a Quote</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index", "Career")">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index","Contact")">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Testimonials","Home",new { tag="testimonials"})" id="Reviews">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        @*SERVICES SECTION*@
+                        <div class="col-sm-6 col-12 mb-3">
+                            <div class="footer_title mb-3">
+                                <h5>Services</h5>
+                            </div>
+
+                            <div class="footer_info">
+                                <ul>
+                                    <li>
+                                        <span>Web Development</span>
+                                    </li>
+                                    <li>
+                                        <span>Ecommerce Development</span>
+                                    </li>
+                                    <li>
+                                        <span>Web & Graphic Design</span>
+                                    </li>
+                                    <li>
+                                        <span>Wordpress Development</span>
+                                    </li>
+                                    <li>
+                                        <span>Mobile App Development</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    @*CONTACT US SECTION*@
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer_title mb-3">
+                                <h5>Contact us</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="footer_info">
+                                <ul>
+                                    <li>
+                                        <strong><img class="mr-2" src="~/images/footer/ind.png" alt="Indian Flag" />India Office</strong>
+                                        <br />
+                                        <p class="mt-2">E 288, Phase - 8A, Ind. Area, Sector 75, Sahibzada Ajit Singh Nagar, Punjab 160071</p>
+                                        <p class="mt-2">+91-872-707-0065</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="footer_info">
+                                <ul>
+                                    <li>
+                                        <strong><img class="mr-2" src="~/images/footer/usa.png" alt="USA Flag" />USA Office</strong>
+                                        <br />
+                                        <p class="mt-2">1400 Cambridge Crossing, Southlake, TX  76092</p>
+                                        <p class="mt-2">(+1) 817-714-6767</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @*CONNECT WITH US FORM SECTION*@
+                <div class="col-xl-4 col-lg-5 col-12">
+                    <div class="footer_title mb-3">
+                        <h5>Connect with us</h5>
+                    </div>
+                    <form action="Portfolio" method="post" class="contactForm">
+                        @*<div>
+                                <h2>@ViewBag.message</h2>
+                            </div>*@
+                        <div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Name</label>
+                                <input type="text" name="Name" required="required" class="form-control contact-form-field" placeholder="Your Name" value="" />
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Email</label>
+                                <input type="email" id="emailValidate" onchange="validateEmail()" name="Email" required="required" class="form-control contact-form-field" placeholder="Your Email" value="" />
+                                <p id="emailCheck"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Phone No.</label>
+                                <input type="text" id="mobileNumber" onchange="validateMobileNumber()" name="Phone_No" maxlength="10" required="required" class="form-control contact-form-field" placeholder="Your Phone Number" value="" />
+                                @Html.ValidationMessageFor(model => model.Phone_No)
+                                <p id="mobileCheck"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Message</label>
+                                <textarea name="Message" required="required" class="form-control contact-form-textarea" placeholder="Your Message"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-12 px-0 text-right">
+                            <div class="form-group mt-5">
+                                <input type="submit" name="btnSubmit" class="btnContact form-submit-bttn" value="Send Message" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/63be5dfe47425128790ccc5a/1gmfpubj5';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+<script>
+    function validateMobileNumber() {
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var mobileNumberPattern = /^[0-9]{10}$/;
+        var messageShowNumber = document.getElementById("mobileCheck");
+
+        if (!mobileNumberPattern.test(mobileNumber)) {
+            messageShowNumber.textContent = "Please Enter Correct Mobile Number";
+            messageShowNumber.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowNumber.style.display = "none";
+        }
+    }
+    function validateEmail() {
+        var email = document.getElementById("emailValidate").value;
+        var emailRegexPattern = /^([A-Za-z]|[0-9])+$/;
+        var messageShowEmail = document.getElementById("emailCheck");
+
+        if (emailRegexPattern.test(email)) {
+            messageShowEmail.textContent = "Please enter a valid email address";
+            messageShowEmail.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowEmail.style.display = "none";
+        }
+    }
+</script>

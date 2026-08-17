@@ -1,0 +1,52 @@
+﻿<!-- Social media section begin -->
+<section class="bg_Social_icons" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            @*<div class="footer_social_icons">
+                    <h3 class="text-capitalize">Join us on our social networks</h3>
+                    <ul>
+                        <li><a href="#" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/confianzaitsolutions/" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3Bv9hun%2BJFSS61ckh8UvIThQ%3D%3D" target="_blank" class="linkedin" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-behance"></i></a>
+                        </li>
+                    </ul>
+                </div>*@
+
+            <div class="col-md-7 col-12">
+                <div class="subscribe_wrapper text-center">
+                    <h6>Subscribe us to get exculsive offers and latest updates.</h6>
+                    <form action="Subscribe" method="post" class="subscribe_input">
+                        <input type="email" id="emailValidate" onchange="validateEmail()" name="Subscribe" required="required" class="form-control contact-form-field shadow" placeholder="Your Email" value="" />
+                        <p id="emailCheck"></p>
+                        <button type="submit">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Social media section end -->
+
+<script>
+    function validateEmail() {
+        var email = document.getElementById("emailValidate").value;
+        var emailRegexPattern = /^([A-Za-z]|[0-9])+$/;
+        var messageShowEmail = document.getElementById("emailCheck");
+
+        if (emailRegexPattern.test(email)) {
+            messageShowEmail.textContent = "Please enter a valid email address";
+            messageShowEmail.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowEmail.style.display = "none";
+        }
+    }
+</script>
+

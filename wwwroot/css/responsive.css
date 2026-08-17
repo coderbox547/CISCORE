@@ -1,0 +1,620 @@
+
+@media only screen and (max-width: 768px) {
+
+.align-sec{
+    margin-top: 4%;
+}
+.navbar-light .navbar-nav .nav-link{
+    text-align:left;
+}
+    .e_comm_heading{
+        margin-top:50px;
+    }
+    .ecomm_input {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    .e_comm_heading h1{
+        font-size:38px;
+        margin-bottom:25px;
+    }
+
+    .align-top-sec {
+        margin-top: 10%;
+    }
+.port-tabs{
+    display: block;
+}
+.port-tabs li{
+    margin: 4% 0;
+}
+.fixed-top{
+    padding:10px 15px;
+}
+.bg_discuss h1{
+    font-size:28px;
+}
+.product-sec-1 {
+    margin-top: 15%;
+}
+.slider-txt h1{
+    font-size: 2rem;
+}
+.carousel-indicators {
+    bottom: -37%;
+}
+
+#fpi_title2{
+    width: 105px;
+    height: 26px;
+    left: -5px;
+    top: 100px;
+}
+#fpi_title h2,#fpi_title2 h2{
+    font-size: 16px;
+    padding: 10px;
+}
+.pricingTable .pricingTable-header:before{
+    left: -30%;
+}
+/*.modal-content{
+    width: 90%;
+    padding: 10px;
+}*/
+
+    .processSteps_Mobile {
+        background: #fff;
+        border-radius: 20px 60px 20px 60px;
+        padding: 16px;
+        box-shadow: 0 0 12px 0 #b5b5b5;
+        margin-bottom: 30px;
+    }
+    .mobile_stepImg {
+        position: absolute;
+        top: 0px;
+        left: -28px;
+        width: 100px;
+        height: 100%;
+        max-width: 100px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .mobile_StepTxt {
+        position: relative;
+        padding:0 0 0 60px;
+        z-index:9;
+    }
+    .mobile_StepTxt label {
+        margin: 0;
+        font-size: 18px;
+        font-family: 'Poppins-SemiBold';
+        color: #14488E;
+    }
+    .mobile_StepTxt p{
+        font-size:13px;
+    }
+    .mobile_StepTxt h1 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        color: #e2e2e2;
+        font-size: 62px;
+        margin: 0;
+        font-family: 'Poppins-SemiBold';
+        z-index: -1;
+    }
+    .swiper-slide{
+        width:100%!important;
+    }
+    .contact-info-col{
+        margin-bottom:60px;
+    }
+    .portfolio_card{
+        margin-top:50px;
+    }
+    .footer_social_icons {
+        flex-direction: column;
+    }
+        .footer_social_icons h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 23px;
+        }
+
+        #view-carousel .carousel .carousel-item{
+            max-width:75%;
+        }
+    .laptop_img{
+        transform:translate(0, 0);
+    }
+    .career_banner h1 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-top: 12px;
+    }
+    .Career_Cards_body ul li strong{
+        width:100%;
+    }
+    .e_comm_banner {
+        margin-bottom: 0;
+    }
+    .plan_outer.popular_pack {
+        transform: scale(1);
+        margin-top:12px;
+    }
+    .plan_btn{
+        padding:4px 25px;
+    }
+        .plan_btn.collapsed {
+            background: transparent;
+            box-shadow: none;
+            color: #818181;
+            padding: 4px 14px;
+        }
+    .plan_outer ul li h6{
+        font-size:15px;
+    }
+    .buy_plan_btn{
+        position:unset;
+        transform:unset;
+    }
+    .contactForm_wrapper {
+        margin-left: 0;
+        padding:20px;
+    }
+    .contact_details_box {
+        position: unset;
+        transform: unset;
+        padding: 25px;
+        margin-bottom: 50px;
+        max-width:100%;
+    }
+    .contactForm_wrapper {
+        margin-bottom: 50px;
+    }
+    .subscribe_wrapper .subscribe_input{
+        flex-direction:column;
+    }
+    .modal.show{
+        padding-right:0;
+    }
+    #ServicesSection .card {
+        margin: 15px;
+        box-shadow: 0 0 28px -10px rgba(0,0,0,0.2);
+    }
+    .services_wrapper{
+        margin-bottom:30px;
+    }
+    .outsource_points, .tech_points {
+        column-count: 1;
+    }
+    .solutions_card h3{
+        font-size:16px;
+        margin-top:16px;
+    }
+    .solutions_card_wrapper {
+        padding:14px;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    #view-carousel .carousel{
+        height:250px;
+        top:0;
+    }
+    .newsletter_header{
+        padding:10px;
+    }
+    .navbar-brand img{
+        max-width:160px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px){
+    #view-carousel .carousel {
+        height: 350px;
+        top: 0;
+    }
+    .laptop_img {
+        transform: translate(0px, 17%);
+    }
+}
+
+@media all and (max-width:991px){
+    .navbar-nav{
+        margin-top:15px;
+    }
+    .navbar-nav .nav-item {
+        border-bottom: 1px dashed #cadbf2;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0;
+        text-align: left;
+    }
+    .techImg img{
+        max-width:150px;
+    }
+    .outsrc_banner, .outsrc_img {
+        max-width: 500px;
+        width:100%;
+        margin:0 auto;
+    }
+}
+
+@media only screen and (max-width:576px){
+    
+    .bg_laptop{
+        max-width:400px;
+        margin:0 auto;
+    }
+    .career_banner h3{
+        font-size:15px;
+    }
+    .banner-heading h1,
+    .career_banner h1 {
+        font-size: 27px;
+        /*text-align: center;*/
+        line-height: 32px;
+        margin-top:0;
+    }
+    .banner-heading h4{
+        font-size:16px;
+      /*  text-align:center;*/
+    }
+    .banner_bg{
+        background-size:contain;
+    }
+    .banner-heading {
+        margin: 0;
+    }
+    .banner-heading{
+        padding-top: 10%;
+    }
+    .banner_bttn a{
+        padding: 4px 20px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .banner-btn-mobile{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .section_aboutUs{
+        margin:0;
+        padding-bottom: 0!important;
+    }
+    .section_aboutUs img {
+        margin-top:35px;
+    }
+    .section_heading h1{
+        font-size: 30px;
+        line-height: 30px;
+        margin:0;
+    }
+    .section_heading h1:after{
+        margin:0 auto;
+    }
+    .section_text p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .dots{
+        right:0;
+    }
+    .work_process_col{
+        height:auto;
+    }
+    .info-sec{
+        margin-bottom:0!important;
+    }
+    .client img{
+        width:30%;
+    }
+    .bg_cyan h1{
+        font-size:35px;
+    }
+    .borderRight{
+        margin-bottom: 15px;
+        border-right: 0;
+        padding-bottom: 25px;
+        border-bottom: 1px dashed #4c525f;
+    }
+   
+    .bg-footer {
+        padding: 3rem 0;
+        background-size: auto;
+    }
+    .section_heading h1{
+        font-size:23px;
+    }
+    .section_heading h5{
+        font-size:16px;
+    }
+    .py6 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .thankyou_page img{
+        max-width:280px;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+
+    .banner-heading h1,
+    .career_banner h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .banner-heading h4{
+        font-size:16px;
+        text-align:center;
+    }
+    .banner-heading{
+        margin:0;
+    }
+    .banner-heading{
+        padding-top: 15%;
+    }
+    .banner-btn-mobile{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .section_aboutUs{
+        margin:0;
+        padding-bottom: 0!important;
+    }
+    .section_aboutUs img {
+        max-width: 100%;
+        margin-bottom:35px;
+    }
+    .section_heading h1{
+        font-size: 38px;
+        line-height: 50px;
+        margin:0;
+    }
+    .section_heading h1:after{
+        margin:-22px auto 0;
+    }
+    .section_text p{
+        margin:0;
+    }
+    /*.service-sec .card{
+        min-height:405px;
+    }*/
+    .dots{
+        right:0;
+    }
+    .work_process_col{
+        height:auto;
+    }
+    .info-sec{
+        margin-bottom:0!important;
+    }
+    .client img{
+        width:30%;
+    }
+    .bg_cyan h1{
+        font-size:35px;
+    }
+    .borderRight{
+        margin-bottom: 15px;
+        border-right: 0;
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .banner-heading h1,
+    .career_banner h1 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .banner_bttn a{
+        padding:4px 25px;
+        height:35px;
+    }
+    .ecomm_input{
+        width:400px;
+    }
+    body {
+        padding-top: 60px;
+    }
+    .section_aboutUs {
+        margin-top: 40px;
+    }
+    .header-nav {
+        padding-top: 0;
+    }
+    
+    .section_heading h1{
+        font-size:34px;
+        margin:0;
+    }
+    .section_heading h1:after{
+        margin:-22px auto 0;
+    }
+    .service-sec .card {
+        min-height: 425px;
+    }
+    .borderRight{
+        border:0;
+    }
+    .work_process_col{
+        height:auto;
+    }
+    .processSteps_Mobile {
+        background: #fff;
+        border-radius: 20px 60px 20px 60px;
+        padding: 16px;
+        box-shadow: 0 0 12px 0 #b5b5b5;
+        margin-bottom: 30px;
+    }
+
+    .mobile_stepImg {
+        position: absolute;
+        top: 0px;
+        left: -28px;
+        width: 100px;
+        height: 100%;
+        max-width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile_StepTxt {
+        position: relative;
+        padding: 0 0 0 60px;
+        z-index: 9;
+    }
+
+        .mobile_StepTxt label {
+            margin: 0;
+            font-size: 18px;
+            font-family: 'Poppins-SemiBold';
+            color: #14488E;
+        }
+
+        .mobile_StepTxt p {
+            font-size: 13px;
+        }
+
+        .mobile_StepTxt h1 {
+            position: absolute;
+            bottom: -20px;
+            right: 12px;
+            color: #e2e2e2;
+            font-size: 62px;
+            margin: 0;
+            font-family: 'Poppins-SemiBold';
+            z-index: -1;
+        }
+    .bg_discuss h1{
+        font-size:38px;
+    }
+    .e_comm_banner {
+        margin-bottom: 0;
+    }
+    .contact_details_box{
+        max-width:330px;
+    }
+    .contactForm_wrapper {
+        padding: 25px 25px 25px 155px;
+    }
+    .newsletter_header{
+        padding:0;
+    }
+ 
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .ui-process-icons img{
+        width:95%;
+    }
+    .ui-process-steps{
+        max-width:330px;
+    }
+    .work_process_col {
+        height: 700px;
+    }
+    .work_process_col .container{
+        width:960px;
+    }
+    #steps-row .box-1 {
+        left: 6%;
+    }
+    #steps-row .box-2{
+        left:3%;
+    }
+    #steps-row .box-3{
+        left:7%;
+    }
+    #steps-row .box-4{
+        left:17%;
+    }
+    #steps-row .box-5{
+        right:11%;
+    }
+    #steps-row .box-6{
+        right:0%;
+    }
+    #steps-row .box-7{
+        right:-4%;
+    }
+    #steps-row .box-8{
+        right:-1%;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin: 0;
+        font-size: 13px;
+    }
+    .side_socialLinks {
+        right: 30px;
+    }
+    .bg-footer {
+        padding: 6rem 0 4rem;
+    }
+    .career_banner h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .section_heading h1{
+        font-size:32px;
+    }
+        .section_heading h1:after {
+            margin: -17px auto 0;
+        }
+    .section_text p{
+        font-size:14px;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    #fpi_title{
+        height:160px;
+        top:0;
+    }
+    .scrollup {
+        left: 30px;
+    }
+    .thankyou_page {
+        height: auto;
+        min-height: 100svh;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .container {
+        max-width: 1450px;
+    }
+
+    .container-fluid {
+        max-width: 90vw;
+    }
+        .container-fluid.contact_map{
+            max-width:100vw;
+        }
+}
+
+@media screen and (min-width:2000px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .container-fluid, .portfolio_container {
+        max-width: 1800px;
+    }
+        .container-fluid.contact_map {
+            max-width: 100vw;
+        }
+}
+
+@media (min-width:1230px) and (max-width:1340px){
+    .side_socialLinks {
+        right: calc(0vw + 30px);
+    }
+}

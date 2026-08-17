@@ -1,0 +1,233 @@
+﻿@model  CisCore.Models.Mail
+@{
+    ViewBag.Title = "Contact";
+}
+
+@*BANNER SECTION BEGIN*@
+<section class="career_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-12" data-aos="fade-right" data-aos-once="true">
+                <div class="career_banner text-left">
+                    <h3>Looking something specific</h3>
+                    <h1>Let's get <span class="clrGreen">connect</span> with us!</h1>
+                    <p>Connect with us effortlessly. Let's start a conversation and build something great together</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-12" data-aos="fade-left" data-aos-once="true">
+                <div class="bg_laptop">
+                    <img class="w-100" src="~/images/contact.svg" alt="banner" draggable="false" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*BANNER SECTION END*@
+
+
+<!-- contact info and form section begin -->
+<div class="container mt100">
+
+    <section class="position-relative w-100" data-aos="fade-up" data-aos-once="true">
+        <div class="contactForm_wrapper shadow">
+            <div class="form-heading">
+                <div class="section_heading">
+                    <h1>Get In Touch With Us.</h1>
+                </div>
+                <div class="section_text">
+                    <p>Just fill out the form below and we will get back to you with positive feedback of related to your query.</p>
+                </div>
+
+            </div>
+            <form asp-controller="Contact" asp-action="Index" method="post">
+                @Html.AntiForgeryToken()
+                @Html.AntiForgeryToken()
+                <div onsubmit="return validateMobileNumber()">
+                <div>
+                    @*<h2>@ViewBag.message</h2>*@
+                </div>
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Role</label>
+                        @*<select class="form-control contact-form-field">
+                                <option value="" selected>Choose a role</option>
+                                <option value="">Owner / CEO</option>
+                                <option value="">Professional</option>
+                                <option value="">Others</option>
+                            </select>*@
+                        @Html.DropDownListFor(model => model.Role, (SelectList)ViewBag.Roles, "Choose a role", new { @class = "form-control contact-form-field", required = "required" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6 col-12">
+                        <label class="font-weight-bold">Full Name</label>
+                        <input type="text" name="Name" required="required" class="form-control contact-form-field" placeholder="Enter Full Name" value="" />
+                    </div>
+                    <div class="form-group col-lg-6 col-12">
+                        <label class="font-weight-bold">Email</label>
+                        <input type="email" id="emailValidate" onchange="validateEmail()" name="Email" required="required" class="form-control contact-form-field" placeholder="Your Email" value="" />
+                        <p class="validationText mb-0" id="emailCheck"></p>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="form-group col-lg-6 col-12">
+                        <label class="font-weight-bold">Contact Number</label>
+                        <input type="text" id="mobileNumber" onchange="validateMobileNumber()" name="Phone_No" maxlength="10" required="required" class="form-control contact-form-field" placeholder="Your Contact Number" value="" />
+                        @Html.ValidationMessageFor(model => model.Phone_No)
+                        <p class="validationText mb-0" id="mobileCheck"></p>
+                    </div>
+                    <div class="form-group col-lg-6 col-12">
+                        <label class="font-weight-bold">Service Looking For</label>
+                        @Html.DropDownListFor(model => model.Service, (SelectList)ViewBag.Services, "Choose a service", new { @class = "form-control contact-form-field", required = "required" })
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-12">
+                        <label class="font-weight-bold">Your Message</label>
+                        <textarea name="Message" required="required" class="form-control contact-form-textarea" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <input type="submit" name="btnSubmit" class="btnContact form-submit-bttn ml-auto" value="Send Message" />
+                </div>
+
+            </form>
+        </div>
+
+        <div class="contact_details_box">
+            <div class="mb-5 contact-options">
+                <label><img src="~/images/footer/ind.png" class="pr-3">India Office</label>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        <p>E 288, Phase - 8A, Ind. Area, Sector 75, Sahibzada Ajit Singh Nagar, Punjab 160071.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        <p class="lh-32"><span>Work :</span>+91-872-707-0065</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        <a href="mailto:info@confianzaitsolutions.com">info@confianzaitsolutions.com</a>
+                        <a href="mailto:enquiry@confianzaitsolutions.com">sales@confianzaitsolutions.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 contact-options">
+                <label><img src="~/images/footer/usa.png" class="pr-3">USA Office</label>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        @*<p>330 South Lake Street Gary, IN 46403.</p>*@
+                        <p>1400 Cambridge Crossing, Southlake, TX  76092</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        @*<p><b>Work: </b>(219) 939-9987 | (877) 328-2646</p>
+                            <p><b>Mobile: </b>(219)898-8783</p>*@
+                        <p><span>Work : </span>(+1) 817-714-6767</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="mb-2 row">
+                    <div class="contact-icon col-md-2 col-sm-1 col-2 text-center my-2">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="contact-text col-md-10 col-sm-11 col-10">
+                        <a href="mailto:info@confianzaitsolutions.com">info@confianzaitsolutions.com</a>
+                        <a href="mailto:sales@confianzaitsolutions.com">sales@confianzaitsolutions.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us form section end -->
+
+</div>
+<!-- contact info and form section end -->
+<!-- map section begin -->
+<div class="container-fluid contact_map">
+    <div class="row">
+        <div class="map-column row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4185.585258553066!2d76.68857877616556!3d30.699809187222062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fefcb98563aed%3A0xd1340b9b6290e1e9!2sConfianza%20IT%20Solutions%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1686141342736!5m2!1sen!2sin" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<!-- map section end -->
+<!-- Social media section begin -->
+<div>
+    @Html.Partial("_SocialAccount")
+</div>
+
+<!-- Social media section end -->
+<!-- footer section begin -->
+<div>
+    @Html.Partial("Partial")
+</div>
+
+<script src="~/js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        disable: 'mobile'
+    });
+</script>
+
+<script>
+    function validateMobileNumber() {
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var mobileNumberPattern = /^[0-9]{10}$/;
+        var messageShowNumber = document.getElementById("mobileCheck");
+
+        if (!mobileNumberPattern.test(mobileNumber)) {
+            messageShowNumber.textContent = "Please Enter Correct Mobile Number";
+            messageShowNumber.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowNumber.style.display = "none";
+        }
+    }
+    function validateEmail() {
+        var email = document.getElementById("emailValidate").value;
+        var emailRegexPattern = /^([A-Za-z]|[0-9])+$/;
+        var messageShowEmail = document.getElementById("emailCheck");
+
+        if (emailRegexPattern.test(email)) {
+            messageShowEmail.textContent = "Please enter a valid email address";
+            messageShowEmail.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowEmail.style.display = "none";
+        }
+    }
+</script>

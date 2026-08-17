@@ -1,0 +1,179 @@
+﻿@model  CisCore.Models.Mail
+@{
+    ViewBag.Title = "Get_a_quote";
+}
+
+
+<section class="bg_request_quote_page mt-5">
+    <div class="container">
+        <div class="row" data-aos="fade-down" data-aos-once="true">
+            <div class="col-md-12">
+                <div class="section_heading text-center">
+                    <h1>Get A Quote</h1>
+                </div>
+                <div class="text-center section_text">
+                    <p>Do you have any general queries and questions. Let’s Talk, we would love to serve you.Our pricing structure are unique to each business. Depending on your requirements, we will build out a model which works for you.Fill Out this brief and we'd be happy to discuss it with you.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-5 col-12 d-md-flex" data-aos="fade-right" data-aos-once="true">
+                <img src="~/images/quote/get_quote.svg" alt="quote" draggable="false" />
+            </div>
+            <div class="col-md-7 col-12" data-aos="fade-left" data-aos-once="true">
+                <form asp-controller="Get_a_quote" asp-action="Index" method="post" class="contactForm" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    @*<div>
+                            <h2>@ViewBag.message</h2>
+                        </div>*@
+                    <div class="row">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Name</label>
+                            <input type="text" name="Name" required="required" class="form-control contact-form-field" placeholder="Your Name" value="" />
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Email</label>
+                            <input type="text" id="emailValidate" onchange="validateEmail()" name="Email" required="required" class="form-control contact-form-field" placeholder="Your Email" value="" />
+                            <p class="validationText mb-0" id="emailCheck"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Phone No.</label>
+                            <input type="text" id="mobileNumber" onchange="validateMobileNumber()" name="Phone_No" required="required" class="form-control contact-form-field" placeholder="Your Phone Number" value="" />
+                            @Html.ValidationMessageFor(model => model.Phone_No)
+                            <p class="validationText mb-0" id="mobileCheck"></p>
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Company Name</label>
+                            <input type="text" name="Company_Name" required="required" class="form-control contact-form-field" placeholder="Your Company Name" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Country</label>
+                            @Html.DropDownListFor(model => model.Country, (SelectList)ViewBag.Countries, "Choose a Country", new { @class = "form-control contact-form-field", required = "required" })
+                        </div>
+                        <div class="form-group col-md-6 col-sm-12">
+                            <label class="font-weight-bold">Role</label>
+                            @Html.DropDownListFor(model => model.Role, (SelectList)ViewBag.Roles, "Choose a Role", new { @class = "form-control contact-form-field", required = "required" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label class="font-weight-bold">Project Description</label>
+                            <textarea required="required" name="Message" class="form-control contact-form-textarea" placeholder="Your Project Details"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label class="font-weight-bold">Project Document (if any)</label>
+                            @*<input type="file" class="form-control-file" required accept=".pdf, .doc, .docx">*@
+                            @Html.TextBox("file", "", new { type = "file", @class= "form-control-file", required = "required", accept = ".pdf, .doc, .docx" }) <br />
+                            <small class="form-text text-muted mt-3">Use only pdf and doc file.</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group mt-4">
+                                <input type="submit" name="" class="btnContact form-submit-bttn ml-auto" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+<!-- our work testimonials section begin -->
+<div>
+    @Html.Partial("_Testimonials")
+</div>
+<!-- our work testimonials section end -->
+<!-- Social media section begin -->
+<div>
+    @Html.Partial("_LetsTalk")
+    @Html.Partial("_SocialAccount")
+</div>
+<!-- Social media section end -->
+<!--footer section begin -->
+<div>
+    @Html.Partial("Partial")
+</div>
+<!--footer section end -->
+
+
+<script src="~/js/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        disable: 'mobile'
+    });
+</script>
+
+
+<!-- animate on scroll js end -->
+<script>
+    $(document).ready(function () {
+        $(window).scrollTop(0);
+    })
+
+    $(document).ready(function () {
+        $("#GetQuote").click(function () {
+            $('html,body').animate({
+                scrollTop: $(".quote-sec").position().top - 60
+            }, 'slow');
+        });
+    })
+
+</script>
+<script>
+        $(function () {
+            if ("@ViewBag.IsExecuted") {
+
+                $('html,body').animate({
+                    scrollTop: $(".quote-sec").position().top - 60
+                }, 'slow');
+            };
+        })
+
+</script>
+
+<script>
+    function validateMobileNumber() {
+        var mobileNumber = document.getElementById("mobileNumber").value;
+        var mobileNumberPattern = /^[0-9]{10}$/;
+        var messageShowNumber = document.getElementById("mobileCheck");
+
+        if (!mobileNumberPattern.test(mobileNumber)) {
+            messageShowNumber.textContent = "Please Enter Correct Mobile Number";
+            messageShowNumber.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowNumber.style.display = "none";
+        }
+    }
+    function validateEmail() {
+        var email = document.getElementById("emailValidate").value;
+        var emailRegexPattern = /^([A-Za-z]|[0-9])+$/;
+        var messageShowEmail = document.getElementById("emailCheck");
+
+        if (emailRegexPattern.test(email)) {
+            messageShowEmail.textContent = "Please enter a valid email address";
+            messageShowEmail.style.display = "block";
+            return false;
+        }
+        else {
+            messageShowEmail.style.display = "none";
+        }
+    }
+</script>
+
+
