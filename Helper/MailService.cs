@@ -29,7 +29,7 @@ namespace CisCore.Helper
 
             try
             {
-                using var mail = new MailMessage(new MailAddress(fromAddress), new MailAddress(toAddress));
+                using var mail = new MailMessage(new MailAddress(fromAddress, "Enquiry"), new MailAddress(toAddress));
                 mail.Subject  = subject;
                 mail.Priority = MailPriority.High;
                 mail.IsBodyHtml = true;
